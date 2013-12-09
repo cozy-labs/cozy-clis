@@ -1,0 +1,40 @@
+{
+  "name": "template",
+  "description": "",
+  "keywords": [],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mycozycloud/template/blob/master/LICENSE"
+    }
+  ],
+  "version": "0.1.0",
+  "homepage": "https://github.com/mycozycloud/template/",
+  "bugs": {
+    "url": "https://github.com/mycozycloud/template/issues"
+  },
+  "author": "Cozy Cloud <contact@cozycloud.cc> (http://cozycloud.cc)",
+  "contributors": [],
+  "engines": {
+    "node": "*"
+  },
+  "main": "./main.js",
+  "dependencies": {
+    "request": "2.21.0",
+    "docopt": "~0.4.0",
+    "request-json": "~0.4.4"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "scripts": {
+    "build": "cake build",
+    "test": "cake tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mycozycloud/request-json.git"
+  },
+  "optionalDependencies": {}
+}

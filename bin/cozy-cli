@@ -1,0 +1,9 @@
+#! /usr/local/bin/node
+
+// Boostrap CLI tool
+var path = require('path'),
+    fs = require('fs');
+
+var src = path.join(path.dirname(fs.realpathSync(__filename)), '..');
+
+require(path.join(src, 'main'));
