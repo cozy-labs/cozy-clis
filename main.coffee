@@ -69,4 +69,4 @@ if modules[moduleName]?
         if err
             console.log "Can't log to your Cozy"
             process.exit 1
-        modules[moduleName].action(opts, client)
+        modules[moduleName].action opts, client
