@@ -7,7 +7,7 @@ module.exports =
 "
 
     action: (opts, client) ->
-        console.log "tofod"
+        console.log "todo"
 
         if opts.create
             getList client, listName, (list) ->
@@ -27,7 +27,6 @@ createTasks = (client, list, task) ->
         log.raw "task successfully created"
 
 
-
 displayTasks = (client, list) ->
     client.get "apps/todos/todolists/#{list.id}/tasks", (err, res, tasks) ->
         for task in tasks.rows
@@ -45,5 +44,7 @@ getList = (client, listName, callback) ->
                 callback list
                 listNotFound = false
                 break
-        log.error 'List not found'
-        process.exit 1
+
+        if listNotFound
+            log.error 'List not found'
+            process.exit 1
