@@ -2,7 +2,7 @@ log = require('logit')(date: false, prefix: null)
 
 module.exports =
     doc: "
-    cozy-cli bookmarks create <link> [--tags=<tags>] Create a new bookmark.
+cozy-cli bookmarks create <link> [--tags=<tags>]
 "
 
     action: (opts, client) ->
