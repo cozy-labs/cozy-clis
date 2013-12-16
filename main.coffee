@@ -49,24 +49,25 @@ The file is maybe corrupted.
 # Load modules from clis directory
 modules = loadModules doc
 
-
-# Generate docopt options
+# Add docopt options
 doc += "\n
-    cozy-cli -h | --help | --version
+cozy-cli -h | --help | --version
 "
-opts = docopt doc, version: version
 
 # Get url
 credentials = getCredentials()
 url = credentials.url
 password = credentials.password
 
+opts = docopt doc, version: version
+
 # Check if action match a given module
+# If yes, match args with available commands.
 moduleName = process.argv[2]
 if modules[moduleName]?
     client = request.newClient url
     client.post 'login', password: password, (err) ->
         if err
-            console.log "Can't log to your Cozy"
+            log.error "Can't log to your Cozy"
             process.exit 1
         modules[moduleName].action opts, client
