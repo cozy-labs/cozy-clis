@@ -21,7 +21,7 @@
   "main": "./main.js",
   "dependencies": {
     "docopt": "git://github.com/frankrousseau/docopt.coffee.git",
-    "request-json": "0.4.4"
+    "request-json": "0.4.4",
     "logit": "0.1.0"
   },
   "devDependencies": {
