@@ -21,6 +21,8 @@
   "engines": {
     "node": "*"
   },
+  "engines": {
+  },
   "main": "./main.js",
   "dependencies": {
     "docopt": "git://github.com/frankrousseau/docopt.coffee.git",
@@ -32,7 +34,7 @@
     "mocha": "*"
   },
   "scripts": {
-    "build": "cake build",
+    "prepublish": "cake build",
     "test": "cake tests"
   },
   "repository": {
