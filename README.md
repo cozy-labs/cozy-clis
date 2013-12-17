@@ -1,7 +1,12 @@
-## Cozy CLI
+## Cozy CLIs
 
-Collection of Command Line Interfaces to manage your Cozy applications
-from the command line.
+At Cozy we spent most of our time in the command line. It's the most efficient
+tool we used: it makes us more productive and it's super hackable. So that
+sounds logical to provide a Command Line Interface to Cozy.
+
+Cozy-clis allows you to manage your Cozy Personal Cloud from the terminal.
+Enjoy using your Cozy through your favorite alias or automating task with bash
+scripts!
 
 ## Install
 
