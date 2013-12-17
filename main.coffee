@@ -12,21 +12,20 @@ doc = """
 Usage:
 """
 
-getModulePath = ->
-    path.join(path.dirname(fs.realpathSync(__filename)), 'clis')
+modulesPath = path.join(path.dirname(fs.realpathSync(__filename)), 'clis')
 
-isCoffeeFile = (fileName) ->
+isJsFile = (fileName) ->
     extension = fileName.split('.')[1]
     firstChar = fileName[0]
-    firstChar isnt '.' and extension is 'coffee'
+    firstChar isnt '.' and extension is 'js'
 
 loadModules = ->
-    moduleFiles = fs.readdirSync getModulePath()
+    moduleFiles = fs.readdirSync modulesPath
     modules = {}
     for moduleFile in moduleFiles
-        if isCoffeeFile moduleFile
+        if isJsFile moduleFile
             name = moduleFile.split('.')[0]
-            modulePath = "./clis/#{name}"
+            modulePath = path.join modulesPath, "#{name}"
             modules[name] = require modulePath
             doc += "\n" + modules[name].doc
     modules
