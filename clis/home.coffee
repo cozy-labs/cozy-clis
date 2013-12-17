@@ -8,6 +8,6 @@ cozy-cli home applications list
         if opts.list
             client.get 'api/applications', (err, res, applications) ->
                 log.raw "Installed Applications"
-                log.break()
+                log.lineBreak()
                 log.raw app.name for app in applications.rows
-                log.break()
+                log.lineBreak()
