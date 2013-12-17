@@ -22,7 +22,7 @@
   "dependencies": {
     "docopt": "git://github.com/frankrousseau/docopt.coffee.git",
     "request-json": "0.4.4",
-    "logit": "0.1.0"
+    "printit": "0.1.2"
   },
   "devDependencies": {
     "chai": "*",
