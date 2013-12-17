@@ -2,7 +2,7 @@
   "name": "cozy-clis",
   "description": "",
   "keywords": [],
-  "version": "0.1.8",
+  "version": "0.1.9",
   "bin": {
     "cozy-clis": "./bin/cozy-clis"
   },
