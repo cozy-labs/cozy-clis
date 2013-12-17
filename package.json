@@ -2,7 +2,7 @@
   "name": "cozy-cli",
   "description": "",
   "keywords": [],
-  "version": "0.1.4",
+  "version": "0.1.5",
   "bin": {
     "cozy-cli": "./bin/cozy-cli"
   },
@@ -18,11 +18,7 @@
   },
   "author": "Cozy Cloud <contact@cozycloud.cc> (http://cozycloud.cc)",
   "contributors": [],
-  "engines": {
-    "node": "*"
-  },
-  "engines": {
-  },
+  "engines": {},
   "main": "./main.js",
   "dependencies": {
     "docopt": "git://github.com/frankrousseau/docopt.coffee.git",
