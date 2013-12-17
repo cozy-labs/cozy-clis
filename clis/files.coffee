@@ -3,8 +3,8 @@ log = require('logit')(date: false, prefix: null)
 module.exports =
     doc: """
 cozy-cli files list
-cozy-cli files download <filename>
-cozy-cli files upload <filename>
+cozy-cli files download <file_name>
+cozy-cli files upload <file_name>
 """
     action: (opts, client) ->
         client.host += 'apps/files/'
@@ -28,7 +28,7 @@ cozy-cli files upload <filename>
         if opts.download
 
             getFiles client, (files) ->
-                fileName = opts["<filename>"]
+                fileName = opts["<file_name>"]
                 fileFound = false
 
                 for file in files
@@ -50,7 +50,7 @@ cozy-cli files upload <filename>
 
         if opts.upload
             # Dirty implementation, need to handle directories properly.
-            fileName = opts["<filename>"]
+            fileName = opts["<file_name>"]
             data =
                 path: ""
                 name: fileName
