@@ -12,7 +12,7 @@ cozy-cli files upload <file_name>
         if opts.list
 
             getFiles client, (files) ->
-                log.raw "Files stored in your Cozy"
+                log.raw "Files stored in your Cozy Files"
                 log.lineBreak()
 
                 files = files.sort (file1, file2) ->

@@ -11,15 +11,15 @@ from the command line.
 
 ### Files
 
-List all files stored in your Cozy:
+List all files stored in your Files app:
 
     cozy-cli files list
 
-Download given file from your Cozy:
+Download given file from your Files app:
 
     cozy-cli download <file_name>
 
-Upload given file to the root of your Cozy:
+Upload given file to the root of your Files app:
 
     cozy-cli upload <file_name>
 
@@ -49,5 +49,3 @@ Get list of installed applications:
 ### Basic options
 
     cozy-cli -h | --help | --version
-
-
