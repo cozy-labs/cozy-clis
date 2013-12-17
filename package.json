@@ -2,13 +2,16 @@
   "name": "cozy-cli",
   "description": "",
   "keywords": [],
+  "version": "0.1.3",
+  "bin": {
+    "cozy-cli": "./bin/cozy-cli"
+  },
   "licenses": [
     {
-      "type": "LGPL",
+      "type": "LGPL v3",
       "url": "https://github.com/frankrousseau/cozy-clo/blob/master/LICENSE"
     }
   ],
-  "version": "0.1.3",
   "homepage": "https://github.com/frankrousseau/cozy-cli/",
   "bugs": {
     "url": "https://github.com/frankrousseau/cozy-cli/issues"
