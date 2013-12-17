@@ -1,4 +1,4 @@
-log = require('logit')(date: false, prefix: null)
+log = require('printit')(date: false, prefix: null)
 
 module.exports =
     doc:"

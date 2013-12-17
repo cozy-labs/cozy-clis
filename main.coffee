@@ -3,7 +3,7 @@ path = require 'path'
 fs = require 'fs'
 
 {docopt} = require 'docopt'
-log = require('logit')(date: false, prefix: null)
+log = require('printit')(date: false, prefix: null)
 
 version = require('./package.json').version
 
