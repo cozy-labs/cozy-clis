@@ -23,6 +23,16 @@ Upload given file to the root of your Files app:
 
     cozy-cli upload <file_name>
 
+### Contacts
+
+List all your contact names
+
+    cozy-cli contacts list
+
+Display details for a contact
+
+    cozy-cli contacts <contact_name>
+
 ### Todos
 
 List task from a todo list:
