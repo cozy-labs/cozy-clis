@@ -65,6 +65,21 @@ Create a new bookmark in the Bookmark app
 
     cozy-clis bookmarks create <link> [--tags=<tags>]
 
+### PFM (banks)
+
+Display your accounts: 
+
+    cozy-cli pfm accounts
+
+Display your bank operations for given account:
+
+    cozy-cli pfm operations <account_number>
+
+Display your expense to plot them:
+
+    cozy-cli pfm expense <account_number>
+
+
 ### Home
 
 Get list of installed applications:
