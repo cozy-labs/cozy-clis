@@ -14,6 +14,26 @@ scripts!
 
 ## Usage
 
+### Calendar
+
+List upcoming events
+
+     cozy-clis calendar upcoming
+
+Create new events
+
+     cozy-clis calendar create 2013-12-25T14:00:00Z 2013-12-25T18:00:00Z xmas
+
+### Contacts
+
+List all your contact names
+
+    cozy-clis contacts list
+
+Display details for a contact
+
+    cozy-clis contacts <contact_name>
+
 ### Files
 
 List all files stored in your Files app:
@@ -27,16 +47,6 @@ Download given file from your Files app:
 Upload given file to the root of your Files app:
 
     cozy-clis upload <file_name>
-
-### Contacts
-
-List all your contact names
-
-    cozy-clis contacts list
-
-Display details for a contact
-
-    cozy-clis contacts <contact_name>
 
 ### Todos
 
