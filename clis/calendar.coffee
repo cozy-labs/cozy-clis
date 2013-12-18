@@ -3,7 +3,7 @@ log = require('printit')(date: false, prefix: null)
 module.exports =
     doc: """
 cozy-cli calendar upcoming
-cozy-cli calendar create <day> <start> <end> <summary>
+cozy-cli calendar create <start> <end> <summary>
 """
     action: (opts, client) ->
         client.host += 'apps/calendar/'
@@ -19,10 +19,10 @@ cozy-cli calendar create <day> <start> <end> <summary>
                         date1 = getDateFormat new Date date1
                         date2 = getDateFormat new Date date2
 
-                        date1.localeCompare date2
+                        date2.localeCompare date1
 
                     log.lineBreak()
-                    for event in events.reverse()
+                    for event in events
                         date = new Date event.start
                         now = new Date()
 
@@ -34,7 +34,20 @@ cozy-cli calendar create <day> <start> <end> <summary>
                             log.lineBreak()
 
         else if opts.create
-            console.log 'create'
+
+            process.env.TZ = 'UTC'
+            data =
+                description: opts["<summary>"]
+                start: new Date opts["<start>"]
+                end: new Date opts["<end>"]
+                place: ""
+
+            client.post 'events', data, (err, res, body) ->
+                if err
+                    log.raw err
+                    log.error "cannot create event"
+                else
+                    log.info "Event successfully created."
 
 
 pad = (number) ->
