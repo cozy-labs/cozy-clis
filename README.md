@@ -14,6 +14,13 @@ action on your data with bash scripts!
 
     npm install cozy-clis -g
 
+Add a configuration file located there `~/.cozy-config.json` and fill it like
+this:
+
+    { "url": "mycozyurl", "password": "mycozypassword"}
+
+Do not put a trailing slash at the end of the url.
+
 ## Usage
 
 ### Calendar
