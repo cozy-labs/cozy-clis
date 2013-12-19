@@ -1,7 +1,7 @@
 ## Cozy CLIs
 
 At Cozy we spent most of our time in the command line. It's the most efficient
-tool we used: it makes us more productive and it's super hackable. So that
+tool we use: it makes us more productive and it's super hackable. So, that
 sounds logical to provide a Command Line Interface to Cozy.
 
 Cozy-clis allows you to manage your Personal Cloud from the terminal.
