@@ -2,9 +2,9 @@ log = require('printit')(date: false, prefix: null)
 
 module.exports =
     doc: """
-cozy-cli pfm accounts
-cozy-cli pfm operations <account_number>
-cozy-cli pfm expense <account_number>
+cozy-clis pfm accounts
+cozy-clis pfm operations <account_number>
+cozy-clis pfm expense <account_number>
 """
     action: (opts, client) ->
         client.host += 'apps/pfm/'

@@ -2,9 +2,9 @@ log = require('printit')(date: false, prefix: null)
 
 module.exports =
     doc:"
-cozy-cli todos list <list_name>\n
-cozy-cli todos create <list_name> <task>\n
-cozy-cli todos check <list_name> <index>
+cozy-clis todos list <list_name>\n
+cozy-clis todos create <list_name> <task>\n
+cozy-clis todos check <list_name> <index>
 "
 
     action: (opts, client) ->

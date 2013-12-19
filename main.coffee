@@ -65,7 +65,7 @@ modules = loadModules doc
 
 # Add docopt options
 doc += "\n
-cozy-cli -h | --help | --version
+cozy-clis -h | --help | --version
 "
 
 credentials = getCredentials()

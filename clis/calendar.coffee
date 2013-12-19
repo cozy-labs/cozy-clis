@@ -2,8 +2,8 @@ log = require('printit')(date: false, prefix: null)
 
 module.exports =
     doc: """
-cozy-cli calendar upcoming
-cozy-cli calendar create <start> <end> <summary>
+cozy-clis calendar upcoming
+cozy-clis calendar create <start> <end> <summary>
 """
     action: (opts, client) ->
         client.host += 'apps/calendar/'

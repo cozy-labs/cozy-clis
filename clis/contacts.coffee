@@ -2,8 +2,8 @@ log = require('printit')(date: false, prefix: null)
 
 module.exports =
     doc: """
-cozy-cli contacts list
-cozy-cli contacts details <contact_name>
+cozy-clis contacts list
+cozy-clis contacts details <contact_name>
 """
     action: (opts, client) ->
         client.host += 'apps/contacts/'

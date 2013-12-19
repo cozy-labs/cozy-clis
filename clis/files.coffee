@@ -2,9 +2,9 @@ log = require('printit')(date: false, prefix: null)
 
 module.exports =
     doc: """
-cozy-cli files list
-cozy-cli files download <file_name>
-cozy-cli files upload <file_name>
+cozy-clis files list
+cozy-clis files download <file_name>
+cozy-clis files upload <file_name>
 """
     action: (opts, client) ->
         client.host += 'apps/files/'

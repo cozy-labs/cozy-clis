@@ -2,7 +2,7 @@ log = require('printit')(date: false, prefix: null)
 
 module.exports =
     doc: "
-cozy-cli home applications list
+cozy-clis home applications list
 "
     action: (opts, client) ->
         if opts.list
