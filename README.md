@@ -4,9 +4,11 @@ At Cozy we spent most of our time in the command line. It's the most efficient
 tool we used: it makes us more productive and it's super hackable. So that
 sounds logical to provide a Command Line Interface to Cozy.
 
-Cozy-clis allows you to manage your Cozy Personal Cloud from the terminal.
-Enjoy using your Cozy through your favorite alias or automating task with bash
-scripts!
+Cozy-clis allows you to manage your Personal Cloud from the terminal.
+Enjoy using it through your favorite alias. Perform automatic and batch
+action on your data with bash scripts!
+
+![screenshot](http://cozy.io/images-ext/cozyclis_screenshot.jpg)
 
 ## Install
 
