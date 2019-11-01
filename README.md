@@ -1,4 +1,6 @@
-This repository is deprecated. To import/export your data from your Cozy, you can use [ACH](https://github.com/cozy/ach).
+⚠️ This repository is deprecated. To import/export your data from your Cozy, you can use [ACH](https://github.com/cozy/ach).
+
+---
 
 ## Cozy CLIs
 
