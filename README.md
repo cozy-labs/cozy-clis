@@ -1,3 +1,5 @@
+This repository is deprecated. To import/export your data from your Cozy, you can use [ACH](https://github.com/cozy/ach).
+
 ## Cozy CLIs
 
 At Cozy we spent most of our time in the command line. It's the most efficient
